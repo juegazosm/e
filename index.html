@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen diagnóstico de aptitudes musicales</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        .pregunta {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Examen diagnóstico de aptitudes musicales</h1>
+    <h1>I.	Direccionalidad de la altura</h1>
+
+    <div class="pregunta">
+        <h2>1 - Indica la direccionalidad de la altura del sonido del siguiente audio.</h2>
+        <form id="pregunta1">
+            <label><input type="radio" name="sentido1" value="a - Descendente, descendente y ascendente" onclick="responder(this)"> a - Descendente, descendente y ascendente</label><br>
+            <label><input type="radio" name="sentido1" value="b - Ascendente, descendente y descendente" onclick="responder(this)"> b - Ascendente, descendente y descendente</label><br>
+            <label><input type="radio" name="sentido1" value="c - Ascendente, descendente y ascendente" onclick="responder(this)"> c - Ascendente, descendente y ascendente</label><br>
+            <label><input type="radio" name="sentido1" value="d - Descendente, ascendente y descendente" onclick="responder(this)"> d - Descendente, ascendente y descendente</label><br>
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>2 - Indica la direccionalidad de la altura del sonido del siguiente audio.</h2>
+        <form id="pregunta2">
+            <label><input type="radio" name="sentido2" value="a - Ascendente, estático y descendente" onclick="responder(this)"> a - Ascendente, estático y descendente</label><br>
+            <label><input type="radio" name="sentido2" value="b - Descendente, estático y ascendente" onclick="responder(this)"> b - Descendente, estático y ascendente</label><br>
+            <label><input type="radio" name="sentido2" value="c - Descendente, estático y estático" onclick="responder(this)"> c - Descendente, estático y estático</label><br>
+            <label><input type="radio" name="sentido2" value="d - Descendente, estático y descendente" onclick="responder(this)"> d - Descendente, estático y descendente</label><br>
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>3 - Considerando que 4 notas constituyen una frase musical, indica la direccionalidad de la altura del sonido de cada frase.</h2>
+        <form id="pregunta3">
+            <label><input type="radio" name="sentido3" value="a - Ascendente, ascendente y descendente" onclick="responder(this)"> a - Ascendente, ascendente y descendente</label><br>
+            <label><input type="radio" name="sentido3" value="b - Ascendente, ascendente y ascendente" onclick="responder(this)"> b - Ascendente, ascendente y ascendente</label><br>
+            <label><input type="radio" name="sentido3" value="c - Ascendente, descendente y ascendente" onclick="responder(this)"> c - Ascendente, descendente y ascendente</label><br>
+            <label><input type="radio" name="sentido3" value="d - Ascendente, estático y descendente" onclick="responder(this)"> d - Ascendente, estático y descendente</label><br>
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>4 - Considerando que 4 notas constituyen una frase musical, indica la direccionalidad de la altura del sonido de cada frase.</h2>
+        <form id="pregunta4">
+            <label><input type="radio" name="sentido4" value="a - Ascendente, estático y descendente" onclick="responder(this)"> a - Ascendente, estático y descendente</label><br>
+            <label><input type="radio" name="sentido4" value="b - Estático, ascendente y estático" onclick="responder(this)"> b - Estático, ascendente y estático</label><br>
+            <label><input type="radio" name="sentido4" value="c - Estático, descendente y descendente" onclick="responder(this)"> c - Estático, descendente y descendente</label><br>
+            <label><input type="radio" name="sentido4" value="d - Estático, descendente y ascendente" onclick="responder(this)"> d - Estático, descendente y ascendente</label><br>
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>5 - ¿Cuántas voces instrumentales se escuchan en el siguiente audio.</h2>
+        <form id="pregunta5">
+            <label><input type="radio" name="sentido5" value="a - 2" onclick="responder(this)"> a - 2</label><br>
+            <label><input type="radio" name="sentido5" value="b - 1" onclick="responder(this)"> b - 1</label><br>
+            <label><input type="radio" name="sentido5" value="c - 3" onclick="responder(this)"> c - 3</label><br>
+            <label><input type="radio" name="sentido5" value="d - 4" onclick="responder(this)"> d - 4</label><br>
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>6 - ¿Cuántas voces instrumentales se escuchan en el siguiente audio.</h2>
+        <form id="pregunta6">
+            <label><input type="radio" name="sentido6" value="a - 2" onclick="responder(this)"> a - 2</label><br>
+            <label><input type="radio" name="sentido6" value="b - 1" onclick="responder(this)"> b - 1</label><br>
+            <label><input type="radio" name="sentido6" value="c - 3" onclick="responder(this)"> c - 3</label><br>
+            <label><input type="radio" name="sentido6" value="d - 4" onclick="responder(this)"> d - 4</label><br>
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>7 - ¿Cuántas voces instrumentales se escuchan en el siguiente audio.</h2>
+        <form id="pregunta7">
+            <label><input type="radio" name="sentido7" value="a - 2" onclick="responder(this)"> a - 2</label><br>
+            <label><input type="radio" name="sentido7" value="b - 1" onclick="responder(this)"> b - 1</label><br>
+            <label><input type="radio" name="sentido7" value="c - 3" onclick="responder(this)"> c - 3</label><br>
+            <label><input type="radio" name="sentido7" value="d - 4" onclick="responder(this)"> d - 4</label><br>
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>8 - Con la voz intenta entonar correctamente los siguientes sonidos pronunciando la sílaba "la".</h2>
+        <form id="pregunta8">
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>9 - Con la voz intenta entonar correctamente los siguientes sonidos pronunciando la sílaba "la".</h2>
+        <form id="pregunta9">
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>10 - Con la voz intenta entonar correctamente los siguientes sonidos pronunciando la sílaba "la".</h2>
+        <form id="pregunta10">
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>11 - Imita con palmadas la siguiente secuencia rítmica.</h2>
+        <form id="pregunta11">
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>12 - Imita con palmadas la siguiente secuencia rítmica.</h2>
+        <form id="pregunta12">
+        </form>
+    </div>
+
+    <div class="pregunta">
+        <h2>13 - Manteniendo un pulso con palmadas, imita la siguiente secuencia rítmica pronunciando la sílaba "la".</h2>
+        <form id="pregunta13">
+        </form>
+    </div>
+
+    <script>
+        let respuestas = JSON.parse(localStorage.getItem("respuestasCuestionario")) || {};
+
+        function responder(radio) {
+            let preguntaId = radio.form.id; 
+            let respuesta = radio.value; 
+
+            respuestas[preguntaId] = respuesta; 
+            localStorage.setItem("respuestasCuestionario", JSON.stringify(respuestas));
+        }
+
+        function descargarRespuestas() {
+            let respuestasGuardadas = JSON.parse(localStorage.getItem("respuestasCuestionario")) || {};
+            let texto = JSON.stringify(respuestasGuardadas, null, 2);
+
+            let elemento = document.createElement('a');
+            elemento.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(texto));
+            elemento.setAttribute('download', 'respuestas.txt');
+
+            elemento.style.display = 'none';
+            document.body.appendChild(elemento);
+
+            elemento.click();
+
+            document.body.removeChild(elemento);
+        }
+    </script>
+    <button onclick="descargarRespuestas()">Descargar respuestas</button>
+
+</body>
+</html>
